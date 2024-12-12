@@ -129,7 +129,10 @@ function renderChat()
 		
 		messagesToAdd.forEach(message => {
 			let date = new Date(message.createdAt);
-			let time = date.getHours() + ":" + date.getMinutes();
+			let time = date.getHours() + ":" + date.getMinutes().toLocaleString('en-US', {
+				minimumIntegerDigits: 2,
+				useGrouping: false
+			});
 			const user = LocalStorageManager.getUserFromId(message.authorId);
 			 
 			
