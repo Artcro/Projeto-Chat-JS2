@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <script src="chat.js"></script>
+    <title>Projeto de Chat</title>
+</head>
+<body class="vh-100">
+<div class="container-fluid bg-light m-3 p-0 w-75 h-75">
+    <div class="row h-100">
+        <div class="col-md-4 border-end h-100">
+            <div class="d-flex align-items-center justify-content-between p-3" id="logged-user-header">
+            </div>
+            
+            <ul class="list-group list-group-flush overflow-auto p-2" style="height: calc(100% - 100px);" id="user-list">
+            </ul>
+        </div>
+
+        <div class="col-md-8 h-100">
+            <div class="d-flex flex-column h-100">
+                <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                    <h4 class="mb-0">Chat em Grupo</h4>
+                </div>
+                <div class="flex-grow-1 overflow-auto p-3 bg-info-subtle" id="chat-div">
+                </div>
+                <div class="p-3 border-top">
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Type a message..." type="text" id="input-message">
+                        <button class="btn btn-primary" id="btn-send">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
